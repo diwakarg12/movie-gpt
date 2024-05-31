@@ -5,7 +5,6 @@ import MovieList from './MovieList';
 
 const MovieListSection = () => {
   const movies = useSelector((store) => store?.movies);
-  // console.log('Now playing movie', movies?.nowPlayingMovies);
   if (
     !movies.nowPlayingMovies ||
     !movies?.popularMovies ||

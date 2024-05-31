@@ -11,7 +11,6 @@ import Header from './Header';
 
 const Browse = () => {
   const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
-  console.log('GPT Search', showGptSearch);
   useNowPlayingMovies();
   usePopularMovies();
   useTopRatedMovies();
