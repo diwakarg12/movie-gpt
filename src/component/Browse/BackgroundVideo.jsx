@@ -18,11 +18,6 @@ const BackgroundVideo = ({ movieId }) => {
         referrerPolicy='strict-origin-when-cross-origin'
         allowFullScreen
       ></iframe>
-      {/* <video className='w-[99vw] aspect-video'>
-        <source
-          src={`https://www.youtube.com/embed/${videoKey}?autoplay=1&mute=1&loop=1&playlist=${videoKey}&controls=0&showinfo=0&modestbranding=1&iv_load_policy=3`}
-        />
-      </video> */}
     </div>
   );
 };

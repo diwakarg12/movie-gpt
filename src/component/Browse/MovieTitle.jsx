@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-// import React from 'react'
 import { FaPlay } from 'react-icons/fa';
 import { TiInfo } from 'react-icons/ti';
 import TruncateText from '../../utility/TruncateText';

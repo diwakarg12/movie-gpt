@@ -1,5 +1,7 @@
 // import React from 'react'
 
+import { WATCH_EVERYWHERE_IMG, WATCH_EVERYWHERE_VIDEO } from "../../utility/constant";
+
 const WatchEveryWhere = () => {
   return (
     <div className='flex w-full text-white my-3 bg-black opacity-80 h-[32rem] py-12 '>
@@ -12,12 +14,12 @@ const WatchEveryWhere = () => {
       </div>
       <div className='w-1/2'>
         <img
-          src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png'
+          src={WATCH_EVERYWHERE_IMG}
           alt='Watch Everywhere'
           className='absolute h96'
         />
         <video autoPlay playsInline loop muted className='h-56 ml-32 mt-12'>
-          <source src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v' />
+          <source src={WATCH_EVERYWHERE_VIDEO} />
         </video>
       </div>
     </div>

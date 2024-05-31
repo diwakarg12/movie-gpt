@@ -6,7 +6,7 @@ import { addUser, removeUser } from '../utility/userSlice';
 import { useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { toggleGptSearch } from '../utility/gptSlice';
-import { SUPPORTED_LANG } from '../utility/constant';
+import { LOGO, PROFILE_LOGO, SUPPORTED_LANG } from '../utility/constant';
 import { changeLanguage } from '../utility/configSlice';
 
 const Header = () => {
@@ -53,7 +53,7 @@ const Header = () => {
       <div className='flex items-center'>
         <Link to='/'>
           <img
-            src='https://images.ctfassets.net/y2ske730sjqp/821Wg4N9hJD8vs5FBcCGg/9eaf66123397cc61be14e40174123c40/Vector__3_.svg?w=460'
+            src={LOGO}
             alt='Logo'
             className='w-48 pl-12'
           />
@@ -123,7 +123,7 @@ const Header = () => {
               onClick={handleLogout}
             >
               <img
-                src='https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg'
+                src={PROFILE_LOGO}
                 alt='Profile icon'
                 className='w-10 h-10 rounded-lg'
               />

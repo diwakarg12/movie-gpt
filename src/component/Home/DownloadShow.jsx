@@ -1,17 +1,23 @@
 // import React from 'react';
 
+import {
+  DOWNLOAD_GIF,
+  DOWNLOAD_SHOW_MAIN,
+  DOWNLOAD_STRANGER_THINGS,
+} from '../../utility/constant';
+
 const DownloadShow = () => {
   return (
     <div className='flex w-full text-white my-3 bg-black opacity-80'>
       <div className='w-1/2 relative'>
         <img
-          src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg'
+          src={DOWNLOAD_SHOW_MAIN}
           alt='Download Show'
           className='h-[90%] pl-12'
         />
         <div className='border w-2/5 h-20 flex gap-4 rounded-md bg-black absolute bottom-20 left-[11.5rem]'>
           <img
-            src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/boxshot.png'
+            src={DOWNLOAD_STRANGER_THINGS}
             alt='Strenger things'
             className='rounded-md'
           />
@@ -20,7 +26,7 @@ const DownloadShow = () => {
             <p className='text-blue-600'>Downloading...</p>
           </div>
           <img
-            src='https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif'
+            src={DOWNLOAD_GIF}
             alt='downloading gif'
           />
         </div>

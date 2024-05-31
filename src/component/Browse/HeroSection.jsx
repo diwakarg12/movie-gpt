@@ -9,7 +9,6 @@ const HeroSection = () => {
   if (!movie) return;
   const mainMovie = movie[0];
   const { original_title, overview, id } = mainMovie;
-  // useMovieTrailer(id);
 
   return (
     <div className='text-white border-2'>

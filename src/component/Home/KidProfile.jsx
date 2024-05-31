@@ -1,11 +1,13 @@
 // import React from 'react';
 
+import { KIDS_PROFILE } from "../../utility/constant";
+
 const KidProfile = () => {
   return (
     <div className='flex w-full text-white my-3 bg-black opacity-80 h-[32rem] py-12'>
       <div className='w-1/2 flex flex-col items-start justify-center'>
         <img
-          src='https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d'
+          src={KIDS_PROFILE}
           alt='Kid Profile'
           className='h-96'
         />

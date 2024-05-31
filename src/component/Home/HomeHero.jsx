@@ -1,8 +1,13 @@
 // import React from 'react'
 
+import { BG_IMG } from '../../utility/constant';
+
 const HomeHero = () => {
   return (
-    <div className='bg-[url(https://assets.nflxext.com/ffe/siteui/vlv3/dd4dfce3-1a39-4b1a-8e19-b7242da17e68/86742114-c001-4800-a127-c9c89ca7bbe4/IN-en-20240527-popsignuptwoweeks-perspective_alpha_website_large.jpg)] bg-black bg-opacity-50 bg-blend-multiply flex flex-col items-center justify-start text-white pt-56 pb-56 w-auto'>
+    <div
+      className='bg-black bg-opacity-50 bg-blend-multiply flex flex-col items-center justify-start text-white pt-56 pb-56 w-auto'
+      style={{ backgroundImage: `url(${BG_IMG})` }}
+    >
       <h1 className='text-[3.25rem] py-3 font-semibold'>
         Unlimited movies, TV shows and more
       </h1>
