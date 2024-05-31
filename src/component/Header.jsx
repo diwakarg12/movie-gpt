@@ -5,8 +5,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addUser, removeUser } from '../utility/userSlice';
 import { useEffect } from 'react';
 import toast from 'react-hot-toast';
+import { toggleGptSearch } from '../utility/gptSlice';
+import { SUPPORTED_LANG } from '../utility/constant';
+import { changeLanguage } from '../utility/configSlice';
 
 const Header = () => {
+  const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
   const dispatch = useDispatch();
   const user = useSelector((store) => store.user);
   const navigate = useNavigate();
@@ -23,7 +27,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-   const unsubscribe = onAuthStateChanged(auth, (user) => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         const { uid, email, displayName } = user;
         dispatch(addUser({ uid: uid, email: email, displayName: displayName }));
@@ -35,6 +39,14 @@ const Header = () => {
     });
     return () => unsubscribe();
   }, []);
+
+  const handleGPTSeach = () => {
+    dispatch(toggleGptSearch());
+  };
+
+  const handleLanguageChange = (e) => {
+    dispatch(changeLanguage(e.target.value));
+  };
 
   return (
     <div className='flex  absolute z-10 left-0 right-0 items-center justify-between p-4'>
@@ -83,26 +95,59 @@ const Header = () => {
       </div>
       <div className=''>
         {user ? (
-          <div
-            className='flex text-white items-center cursor-pointer'
-            onClick={handleLogout}
-          >
-            <img
-              src='https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg'
-              alt='Profile icon'
-              className='w-10 h-10 rounded-lg'
-            />
-            <p className='text-white text-lg font-semibold'>(Logout)</p>
+          <div className='flex gap-6'>
+            {showGptSearch && (
+              <select
+                className='bg-transparent text-white font-semibold border-2 rounded-md focus:outline-none px-2'
+                onChange={handleLanguageChange}
+              >
+                {SUPPORTED_LANG.map((lang) => (
+                  <option
+                    className='text-black'
+                    key={lang.identifier}
+                    value={lang.identifier}
+                  >
+                    {lang.name}
+                  </option>
+                ))}
+              </select>
+            )}
+            <button
+              onClick={handleGPTSeach}
+              className='bg-purple-700 text-white px-3 rounded-sm'
+            >
+              {showGptSearch ? 'Browse Page' : 'GPT Search'}
+            </button>
+            <div
+              className='flex text-white items-center cursor-pointer'
+              onClick={handleLogout}
+            >
+              <img
+                src='https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg'
+                alt='Profile icon'
+                className='w-10 h-10 rounded-lg'
+              />
+              <button className='text-white bg-red-700 px-4 py-1.5 rounded-sm text-lg font-semibold'>
+                Logout
+              </button>
+            </div>
           </div>
         ) : (
           <div className='flex items-center justify-center gap-10'>
             <div>
               <select
-                name='language'
-                className='py-1 px-3 bg-transparent text-white text-lg font-medium border-2 border-gray-300 rounded-sm'
+                className='bg-transparent text-white font-semibold border-2 rounded-sm focus:outline-none px-3 py-2'
+                onChange={handleLanguageChange}
               >
-                <option value='english'>English</option>
-                <option value='hindi'>Hindi</option>
+                {SUPPORTED_LANG.map((lang) => (
+                  <option
+                    className='text-black'
+                    key={lang.identifier}
+                    value={lang.identifier}
+                  >
+                    {lang.name}
+                  </option>
+                ))}
               </select>
             </div>
             <div>

@@ -15,6 +15,7 @@ import { useDispatch } from 'react-redux';
 import { addUser } from '../utility/userSlice';
 import Header from './Header';
 import toast from 'react-hot-toast';
+import { BG_IMG } from '../utility/constant';
 const Login = () => {
   const [isLogin, setIsLogin] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
@@ -77,7 +78,7 @@ const Login = () => {
   };
 
   return (
-    <div className='w-full h-[110vh] bg-[url(https://assets.nflxext.com/ffe/siteui/vlv3/dd4dfce3-1a39-4b1a-8e19-b7242da17e68/86742114-c001-4800-a127-c9c89ca7bbe4/IN-en-20240527-popsignuptwoweeks-perspective_alpha_website_large.jpg)] bg-black bg-opacity-50 bg-blend-multiply relative'>
+    <div className={`w-full h-[110vh] bg-[url(${BG_IMG})] bg-black bg-opacity-50 bg-blend-multiply relative`}>
       <Header />
       <div className='w-1/3 rounded-sm text-white left-1/3 top-32 bg-black bg-opacity-70 bg-blend-multiply py-8 absolute'>
         <h1 className='text-4xl  font-semibold pl-16 pb-4'>
