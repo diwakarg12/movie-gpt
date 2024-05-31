@@ -37,7 +37,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className='flex  absolute left-0 right-0 items-center justify-between p-4'>
+    <div className='flex  absolute z-10 left-0 right-0 items-center justify-between p-4'>
       <div className='flex items-center'>
         <Link to='/'>
           <img

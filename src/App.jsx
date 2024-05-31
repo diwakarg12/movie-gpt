@@ -1,4 +1,3 @@
-// import './App.css'
 import { useState } from 'react';
 import Header from './component/Header';
 import DownloadShow from './component/Home/DownloadShow';

@@ -1,9 +1,31 @@
 // import React from 'react'
 
-const MovieListSection = () => {
-  return (
-    <div>MovieListSection</div>
-  )
-}
+import { useSelector } from 'react-redux';
+import MovieList from './MovieList';
 
-export default MovieListSection
+const MovieListSection = () => {
+  const movies = useSelector((store) => store?.movies);
+  // console.log('Now playing movie', movies?.nowPlayingMovies);
+  if (
+    !movies.nowPlayingMovies ||
+    !movies?.popularMovies ||
+    !movies?.topRatedMovies
+  ) {
+    return <div>Movies Not Found</div>;
+  }
+  return (
+    <div className='bg-black'>
+      <div className='-mt-72 relative z-[1000]'>
+        <MovieList
+          title={'Now Playing Movies'}
+          movies={movies?.nowPlayingMovies}
+        />
+        <MovieList title={'Top rated Movies'} movies={movies?.topRatedMovies} />
+        <MovieList title={'Upcoming movies'} movies={movies?.upcomingMovies} />
+        <MovieList title={'Popular Movies'} movies={movies?.popularMovies} />
+      </div>
+    </div>
+  );
+};
+
+export default MovieListSection;
