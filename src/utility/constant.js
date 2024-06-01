@@ -2,8 +2,7 @@ export const API_OPTIONS = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization:
-      'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzMzEzOWQ4Zjg5NDNmMjZjYmMzNmE2NzhiYjQwMDM0NCIsInN1YiI6IjY2NThjZjI2NGMxYWQ4ZDUzMDZjMjk2NSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Nwno7nfShdWIPedJWRDh_eqWaqqjRe9EPWIQgEeJgs0',
+    Authorization: `Bearer ${import.meta.env.VITE_MOVIE_TOKEN}`,
   },
 };
 
@@ -35,7 +34,7 @@ export const ENJOY_ON_TV_IMG =
   'https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png';
 
 export const ENJOY_ON_TV_VIDEO =
-    'https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v';
+  'https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v';
 
 export const KIDS_PROFILE =
   'https://occ-0-3241-2164.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d';
