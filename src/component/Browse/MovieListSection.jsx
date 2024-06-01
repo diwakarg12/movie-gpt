@@ -14,7 +14,7 @@ const MovieListSection = () => {
   }
   return (
     <div className='bg-black'>
-      <div className='-mt-72 relative z-[1000]'>
+      <div className='md:-mt-72 -mt-0 relative z-[1000]'>
         <MovieList
           title={'Now Playing Movies'}
           movies={movies?.nowPlayingMovies}

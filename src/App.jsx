@@ -7,44 +7,41 @@ import HomeHero from './component/Home/HomeHero';
 import KidProfile from './component/Home/KidProfile';
 import WatchEveryWhere from './component/Home/WatchEveryWhere';
 import ReadyToWatch from './component/Home/ReadyToWatch';
+import { FaqLang } from './utility/langConstant';
+import { useSelector } from 'react-redux';
 
 function App() {
+  const langKey = useSelector((store) => store.config.lang);
   const faqData = [
     {
       id: 1,
-      Question: 'What is Netflix?',
-      Answer:
-        'Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more - on thousands of internet-connected devices. You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There`s always something new to discover, and new TV shows and movies are added every week!',
+      Question: FaqLang[langKey].question1,
+      Answer: FaqLang[langKey].answer1,
     },
     {
       id: 2,
-      Question: 'How much does Netflix Cost?',
-      Answer:
-        'Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.',
+      Question: FaqLang[langKey].question2,
+      Answer: FaqLang[langKey].answer2,
     },
     {
       id: 3,
-      Question: 'Where can i Watch?',
-      Answer:
-        'Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles. You can also download your favourite shows with the iOS, Android, or Windows 10 app.',
+      Question: FaqLang[langKey].question3,
+      Answer: FaqLang[langKey].answer3,
     },
     {
       id: 4,
-      Question: 'How do i cancel?',
-      Answer:
-        'Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees - start or stop your account anytime.',
+      Question: FaqLang[langKey].question4,
+      Answer: FaqLang[langKey].answer4,
     },
     {
       id: 5,
-      Question: 'What can i watch on Netflix?',
-      Answer:
-        'Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.',
+      Question: FaqLang[langKey].question5,
+      Answer: FaqLang[langKey].answer5,
     },
     {
       id: 6,
-      Question: 'is Netflix Good for kids?',
-      Answer:
-        'The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space. Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don`t want kids to see.',
+      Question: FaqLang[langKey].question6,
+      Answer: FaqLang[langKey].answer6,
     },
   ];
   const [showIndex, setShowIndex] = useState(null);
@@ -59,8 +56,8 @@ function App() {
         <WatchEveryWhere />
         <KidProfile />
         <div className='text-white bg-black py-6 flex flex-col items-center justify-center'>
-          <h1 className='text-6xl font-bold py-4'>
-            Frequently Asked Questions
+          <h1 className='md:text-6xl text-3xl font-bold py-4'>
+            {FaqLang[langKey].heading}
           </h1>
           {faqData.map((faq, index) => (
             <Faq

@@ -11,7 +11,7 @@ const HeroSection = () => {
   const { original_title, overview, id } = mainMovie;
 
   return (
-    <div className='text-white border-2'>
+    <div className='text-white bg-black border'>
       <MovieTitle title={original_title} overview={overview} />
       <BackgroundVideo movieId={id} />
     </div>

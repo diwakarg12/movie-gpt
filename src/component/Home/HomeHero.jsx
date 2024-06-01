@@ -1,34 +1,37 @@
 // import React from 'react'
 
+import { useSelector } from 'react-redux';
 import { BG_IMG } from '../../utility/constant';
+import { HomeHeroLang } from '../../utility/langConstant';
 
 const HomeHero = () => {
+  const langKey = useSelector((store) => store.config.lang);
   return (
     <div
-      className='bg-black bg-opacity-50 bg-blend-multiply flex flex-col items-center justify-start text-white pt-56 pb-56 w-auto'
+      className='bg-black bg-opacity-50 bg-blend-multiply flex flex-col items-center justify-start text-white md:py-56 py-32 w-auto'
       style={{ backgroundImage: `url(${BG_IMG})` }}
     >
-      <h1 className='text-[3.25rem] py-3 font-semibold'>
-        Unlimited movies, TV shows and more
+      <h1 className='md:text-[3.25rem] text-3xl md:px-0 px-4 py-3 font-semibold'>
+        {HomeHeroLang[langKey].h1}
       </h1>
-      <h2 className='text-3xl font-medium py-2 '>
-        Watch anywhere. Cancel anytime.
+      <h2 className='md:text-3xl text-2xl font-medium py-2 '>
+        {HomeHeroLang[langKey].h2}
       </h2>
-      <p className='text-2xl py-2 font-medium'>
-        Ready to watch? Enter your email to create or restart your membership.
+      <p className='md:text-2xl text-xl md:px-0 px-4 py-2 font-medium'>
+        {HomeHeroLang[langKey].p}
       </p>
       <div className='flex flex-wrap'>
         <input
           type='email'
           name='email'
-          className='py-2 w-[28rem] px-2 text-white text-xl font-medium bg-black bg-opacity-40 bg-blend-multiply placeholder:text-white border-2 rounded-sm'
-          placeholder='Email*'
+          className='py-2 md:w-[28rem] w-[14rem] px-2 text-white text-xl font-medium bg-black bg-opacity-40 bg-blend-multiply placeholder:text-white border-2 rounded-sm'
+          placeholder={HomeHeroLang[langKey].placeholder}
         />
         <button
           type='submit'
-          className='text-2xl font-semibold mx-4 rounded-md w-52 h-14 bg-red-700'
+          className='md:text-2xl text-xl font-semibold md:mx-4 mx-2 rounded-md md:w-52 w-24 h-14 bg-red-700'
         >
-          Get Started
+          {HomeHeroLang[langKey].botton}
         </button>
       </div>
     </div>

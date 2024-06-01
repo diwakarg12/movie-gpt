@@ -50,55 +50,17 @@ const Header = () => {
 
   return (
     <div className='flex  absolute z-10 left-0 right-0 items-center justify-between p-4'>
-      <div className='flex items-center'>
+      <div className='flex items-center md:-ml-0 md:mr-0 mr-6 -ml-12'>
         <Link to='/'>
-          <img
-            src={LOGO}
-            alt='Logo'
-            className='w-48 pl-12'
-          />
+          <img src={LOGO} alt='Logo' className='md:w-48 w-40 pl-12' />
         </Link>
-        {user && (
-          <div className='flex space-x-6 text-white ml-20'>
-            <Link
-              to='/browse'
-              className='text-lg font-medium hover:text-red-500 hover:underline'
-            >
-              Home
-            </Link>
-            <Link
-              to='/browse'
-              className='text-lg font-medium hover:text-red-500 hover:underline'
-            >
-              New Movies
-            </Link>
-            <Link
-              to='/browse'
-              className='text-lg font-medium hover:text-red-500 hover:underline'
-            >
-              Trending
-            </Link>
-            <Link
-              to='/browse'
-              className='text-lg font-medium hover:text-red-500 hover:underline'
-            >
-              About
-            </Link>
-            <Link
-              to='/browse'
-              className='text-lg font-medium hover:text-red-500 hover:underline'
-            >
-              Contact
-            </Link>
-          </div>
-        )}
       </div>
       <div className=''>
         {user ? (
           <div className='flex gap-6'>
             {showGptSearch && (
               <select
-                className='bg-transparent text-white font-semibold border-2 rounded-md focus:outline-none px-2'
+                className='bg-transparent md:relative absolute md:top-0 top-20 right-4 md:py-3 py-2 text-white md:text-base text-xl font-semibold border-2 rounded-md focus:outline-none px-6'
                 onChange={handleLanguageChange}
               >
                 {SUPPORTED_LANG.map((lang) => (
@@ -122,18 +84,23 @@ const Header = () => {
               className='flex text-white items-center cursor-pointer'
               onClick={handleLogout}
             >
-              <img
-                src={PROFILE_LOGO}
-                alt='Profile icon'
-                className='w-10 h-10 rounded-lg'
-              />
-              <button className='text-white bg-red-700 px-4 py-1.5 rounded-sm text-lg font-semibold'>
+              <div>
+                <img
+                  src={PROFILE_LOGO}
+                  alt='Profile icon'
+                  className='w-10 h-10 rounded-lg relative'
+                />
+                <p className='md:hidden block absolute top-10 font-semibold'>
+                  Logout
+                </p>
+              </div>
+              <button className='text-white bg-red-700 px-4 py-1.5 rounded-sm text-lg font-semibold md:block hidden'>
                 Logout
               </button>
             </div>
           </div>
         ) : (
-          <div className='flex items-center justify-center gap-10'>
+          <div className='flex items-center justify-center md:gap-10 gap-4'>
             <div>
               <select
                 className='bg-transparent text-white font-semibold border-2 rounded-sm focus:outline-none px-3 py-2'
@@ -153,7 +120,7 @@ const Header = () => {
             <div>
               <Link
                 to='/login'
-                className='bg-red-600 hover:bg-red-800 py-2 px-4 rounded-sm text-white text-base font-semibold'
+                className='bg-red-600 hover:bg-red-800 py-3 px-4 rounded-sm text-white text-base font-semibold'
               >
                 Sign In
               </Link>

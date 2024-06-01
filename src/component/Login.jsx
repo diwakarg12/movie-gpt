@@ -16,7 +16,10 @@ import { addUser } from '../utility/userSlice';
 import Header from './Header';
 import toast from 'react-hot-toast';
 import { BG_IMG } from '../utility/constant';
+import { LoginLang } from '../utility/langConstant';
+import { useSelector } from 'react-redux';
 const Login = () => {
+  const langKey = useSelector((store) => store.config.lang);
   const [isLogin, setIsLogin] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const dispatch = useDispatch();
@@ -83,12 +86,11 @@ const Login = () => {
       style={{ backgroundImage: `url(${BG_IMG})` }}
     >
       <Header />
-      <div className='w-1/3 rounded-sm text-white left-1/3 top-32 bg-black bg-opacity-70 bg-blend-multiply py-8 absolute'>
-        <h1 className='text-4xl  font-semibold pl-16 pb-4'>
-          {isLogin ? 'SIGNIN' : 'SIGNUP'}
+      <div className='md:w-1/3 w-full rounded-sm text-white md:left-1/3 left-0 top-32 bg-black bg-opacity-70 bg-blend-multiply py-8 absolute'>
+        <h1 className='text-4xl  font-semibold md:pl-16 pl-4 pb-4'>
+          {isLogin ? LoginLang[langKey].signin : LoginLang[langKey].signup}
         </h1>
         <form
-          action=''
           onSubmit={handleSubmit}
           className='flex flex-col items-center justify-center'
         >
@@ -97,52 +99,56 @@ const Login = () => {
               type='text'
               name='name'
               ref={name}
-              placeholder='Name*'
-              className='w-3/4 px-2 py-3 bg-transparent border-2 border-gray-500 rounded-sm my-3 placeholder:text-white font-medium'
+              placeholder={LoginLang[langKey].namePlaceholder}
+              className='md:w-3/4 w-11/12 px-2 py-3 bg-transparent border-2 border-gray-500 rounded-sm my-3 placeholder:text-white font-medium'
             />
           )}
           <input
             type='email'
             name='email'
             ref={email}
-            placeholder='Email*'
-            className='w-3/4 px-2 py-3 bg-transparent border-2 border-gray-500 rounded-sm my-3 placeholder:text-white font-medium'
+            placeholder={LoginLang[langKey].emailPlaceholder}
+            className='md:w-3/4 w-11/12 px-2 py-3 bg-transparent border-2 border-gray-500 rounded-sm my-3 placeholder:text-white font-medium'
           />
           <input
             type='password'
             name='password'
             ref={password}
-            placeholder='Password*'
-            className='w-3/4 px-2 py-3 bg-transparent border-2 border-gray-500 rounded-sm my-3 placeholder:text-white font-medium '
+            placeholder={LoginLang[langKey].passwordPlaceholder}
+            className='md:w-3/4 w-11/12 px-2 py-3 bg-transparent border-2 border-gray-500 rounded-sm my-3 placeholder:text-white font-medium '
           />
           {errorMessage && (
-            <p className='text-red-500 -ml-44 font-medium text-lg '>
+            <p className='text-red-500 md:-ml-44 -ml-48 font-medium text-lg '>
               {errorMessage}
             </p>
           )}
           <button
             type='submit'
-            className='w-3/4 bg-red-600 py-2 my-3 hover:bg-red-800 hover:text-gray-300 rounded-sm font-semibold text-white text-lg'
+            className='md:w-3/4 w-11/12 bg-red-600 py-2 my-3 hover:bg-red-800 hover:text-gray-300 rounded-sm font-semibold text-white text-lg'
           >
-            {isLogin ? 'Login' : 'Register'}
+            {isLogin ? LoginLang[langKey].signin : LoginLang[langKey].signup}
           </button>
           <p
             className='ml-24 cursor-pointer hover:text-blue-600 hover:underline'
             onClick={() => setIsLogin(!isLogin)}
           >
-            {isLogin
-              ? 'New user ? Register Here'
-              : 'Already have an Account? Login Here'}
+            {isLogin ? LoginLang[langKey].login : LoginLang[langKey].register}
           </p>
         </form>
-        <p className='text-xl font-semibold text-center py-4'>OR</p>
-        <div className='w-3/4 border-2 m-auto flex items-center justify-center py-3 rounded-sm my-3 hover:text-red-500'>
+        <p className='text-xl font-semibold text-center md:py-4 py-6'>
+          {LoginLang[langKey].or}
+        </p>
+        <div className='md:w-3/4 w-11/12 border-2 m-auto flex items-center justify-center py-3 rounded-sm my-3 hover:text-red-500'>
           <FaGoogle className='text-2xl' />{' '}
-          <span className='px-4 font-[550] text-lg'>Login with Google</span>
+          <span className='px-4 font-[550] text-lg'>
+            {LoginLang[langKey].google}
+          </span>
         </div>
-        <div className='w-3/4 border-2 m-auto flex items-center justify-center py-3 rounded-sm my-3 hover:text-red-500'>
+        <div className='md:w-3/4 w-11/12 border-2 m-auto flex items-center justify-center py-3 rounded-sm my-3 hover:text-red-500'>
           <FaGithub className='text-2xl' />{' '}
-          <span className='px-4 font-[550] text-lg'>Login with Github</span>
+          <span className='px-4 font-[550] text-lg'>
+            {LoginLang[langKey].github}
+          </span>
         </div>
       </div>
     </div>

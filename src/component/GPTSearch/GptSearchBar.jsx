@@ -18,7 +18,6 @@ const GptSearchBar = () => {
       API_OPTIONS
     );
     const data = await response.json();
-    // console.log(data.results);
     return data.results;
   };
 
@@ -51,19 +50,19 @@ const GptSearchBar = () => {
   return (
     <div className='bg-black bg-opacity-50 bg-blend-multiply'>
       <form
-        className='w-3/5 py-40 m-auto rounded-md text-white grid grid-cols-12'
+        className='md:w-3/5 w-full py-40 m-auto rounded-md text-white grid grid-cols-12'
         onSubmit={handleGptSearch}
       >
         <input
           type='text'
           ref={searchText}
           name='search'
-          className='col-span-9 bg-transparent text-white mx-2 border p-3 font-medium placeholder:font-medium placeholder:text-white rounded-sm focus:outline-none'
+          className='col-span-8 bg-transparent text-white mx-2 border p-3 font-medium placeholder:font-medium placeholder:text-white rounded-sm focus:outline-none'
           placeholder={Gptlang[langKey].gptSearchPlaceholder}
         />
         <button
           type='submit'
-          className='col-span-3 bg-red-700 rounded-sm py-2 mx-2 font-semibold text-lg hover:bg-opacity-80'
+          className='col-span-4 bg-red-700 rounded-sm py-2 mx-2 font-semibold text-lg hover:bg-opacity-80'
         >
           {Gptlang[langKey].search}
         </button>
