@@ -7,7 +7,7 @@ import GptSearchMovies from './GptSearchMovies';
 const GptSearch = () => {
   return (
     <div
-      className='flex flex-col justify-center items-center bg-black bg-opacity-50 bg-blend-multiply relative'
+      className='flex flex-col justify-center bg-black bg-opacity-50 bg-blend-multiply relative'
       style={{ backgroundImage: `url(${BG_IMG})` }}
     >
       <GptSearchBar />
