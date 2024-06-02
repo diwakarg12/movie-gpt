@@ -6,7 +6,6 @@ import { Provider } from 'react-redux';
 import appStore from './utility/appStore';
 import { Toaster } from 'react-hot-toast';
 
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={appStore}>

@@ -5,10 +5,13 @@ import MovieList from '../Browse/MovieList';
 
 const GptSearchMovies = () => {
   const { movieNames, movieResults } = useSelector((store) => store.gpt);
-  // if (!movieNames || movieResults) return null;
+  console.log(movieNames, movieResults);
+  if (!movieNames) return null;
+
+  if (!movieResults) return null;
 
   return (
-    <div className='bg-black bg-opacity-50 bg-blend-multiply py-10 px-4'>
+    <div className='bg-black bg-opacity-50 bg-blend-multiply px-4'>
       <div>
         {movieNames?.map((movieName, index) => (
           <MovieList
@@ -18,9 +21,6 @@ const GptSearchMovies = () => {
           />
         ))}
       </div>
-      <p className='text-white py-4'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, atque?
-      </p>
     </div>
   );
 };

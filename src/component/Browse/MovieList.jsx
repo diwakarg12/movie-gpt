@@ -5,6 +5,7 @@ import '../../App.css';
 import MovieCard from './MovieCard';
 
 const MovieList = ({ title, movies }) => {
+  if (!movies) return null;
   return (
     <div className='px-4 bg-'>
       <h1 className='text-white text-2xl pt-12 pb-4 font-semibold'>{title}</h1>

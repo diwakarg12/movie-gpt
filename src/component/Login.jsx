@@ -18,10 +18,14 @@ import toast from 'react-hot-toast';
 import { BG_IMG } from '../utility/constant';
 import { LoginLang } from '../utility/langConstant';
 import { useSelector } from 'react-redux';
+import { FaEye } from 'react-icons/fa';
+import { FaEyeSlash } from 'react-icons/fa';
+
 const Login = () => {
   const langKey = useSelector((store) => store.config.lang);
   const [isLogin, setIsLogin] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const dispatch = useDispatch();
 
   const name = useRef(null);
@@ -111,12 +115,27 @@ const Login = () => {
             className='md:w-3/4 w-11/12 px-2 py-3 bg-transparent border-2 border-gray-500 rounded-sm my-3 placeholder:text-white font-medium'
           />
           <input
-            type='password'
+            type={showPassword ? 'text' : 'password'}
             name='password'
             ref={password}
             placeholder={LoginLang[langKey].passwordPlaceholder}
             className='md:w-3/4 w-11/12 px-2 py-3 bg-transparent border-2 border-gray-500 rounded-sm my-3 placeholder:text-white font-medium '
           />
+          <span
+            className={
+              !isLogin
+                ? 'absolute right-20 top-[16.5rem] cursor-pointer'
+                : 'absolute right-20 top-[11.7rem] cursor-pointer'
+            }
+            onClick={() => setShowPassword(!showPassword)}
+          >
+            {showPassword ? (
+              <FaEye className='text-2xl' />
+            ) : (
+              <FaEyeSlash className='text-2xl' />
+            )}
+          </span>
+
           {errorMessage && (
             <p className='text-red-500 md:-ml-44 -ml-48 font-medium text-lg '>
               {errorMessage}
