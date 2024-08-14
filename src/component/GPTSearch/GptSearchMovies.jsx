@@ -2,13 +2,14 @@
 
 import { useSelector } from 'react-redux';
 import MovieList from '../Browse/MovieList';
+import ShimmerCards from '../ShimmerCards';
 
 const GptSearchMovies = () => {
   const { movieNames, movieResults } = useSelector((store) => store.gpt);
   console.log(movieNames, movieResults);
-  if (!movieNames) return null;
-
-  if (!movieResults) return null;
+  if (!movieNames || !movieResults) {
+    return <ShimmerCards />;
+  }
 
   return (
     <div className='bg-black bg-opacity-50 bg-blend-multiply px-4'>

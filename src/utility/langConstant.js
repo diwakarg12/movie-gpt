@@ -15,23 +15,23 @@ export const Gptlang = {
 
 export const HomeHeroLang = {
   en: {
-    h1: 'Unlimited movies, TV shows and more',
-    h2: 'Watch anywhere. Cancel anytime.',
-    p: 'Ready to watch? Enter your email to create or restart your membership.',
+    h1: 'Welcome to the Movie Match',
+    h2: 'A Movie Recommendation System',
+    p: 'Where You can Search different types of movies Based on Name, Genere or Story line',
     botton: 'Get Started',
     placeholder: 'Email*',
   },
   hindi: {
-    h1: 'असीमित फिल्में, टीवी शो और बहुत कुछ',
-    h2: 'कहीं भी देखो. किसी भी समय रद्द करें.',
-    p: 'देखने के लिए तैयार हैं? अपनी सदस्यता बनाने या पुनः आरंभ करने के लिए अपना ईमेल दर्ज करें।',
+    h1: 'मूवी मैच में आपका स्वागत है',
+    h2: 'एक मूवी सिफ़ारिश प्रणाली.',
+    p: 'जहां आप नाम, शैली या कहानी के आधार पर विभिन्न प्रकार की फिल्में खोज सकते हैं।',
     botton: 'शुरू हो जाओ',
     placeholder: 'ईमेल*',
   },
   spanish: {
-    h1: 'Películas ilimitadas, programas de TV y más',
-    h2: 'Mira en cualquier lugar. Cancele en cualquier momento.',
-    p: '¿Listo para mirar? Ingrese su correo electrónico para crear o reiniciar su membresía.',
+    h1: 'Bienvenido al partido de película',
+    h2: 'Un sistema de recomendación de películas.',
+    p: 'Dónde puede buscar diferentes tipos de películas según el nombre, el género o la trama.',
     botton: 'Empezar',
     placeholder: 'Correo electrónico*',
   },
@@ -39,14 +39,16 @@ export const HomeHeroLang = {
 
 export const EnjoyOnTVLang = {
   en: {
-    heading: 'Enjoy on your Tv',
+    heading1: 'Welcome to the',
+    heading2: 'Movie Match',
     paragraph:
-      'Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ducimus assumenda error animi quibusdam modi voluptate, sunt expedita recusandae iure suscipit sequi fugit iste explicabo mollitia amet voluptates nam. Error enim explicabo voluptatibus repudiandae, facilis nihil doloremque fugiat provident odio quisquam, alias sequi pariatur nam quidem ab incidunt cumque eum dolorum repellat nemo. Aliquam consequatur reprehenderit amet rem officiis cumque minima recusandae explicabo. Voluptates in explicabo officiis neque qui libero nisi quia, numquam, nesciunt blanditiis minima consequatur harum. Quos quaerat ipsum culpa molestiae magnam velit quia laborum, consequatur voluptate, pariatur porro ea perferendis quae quasi necessitatibus, at illo quidem. Eos?',
   },
   hindi: {
-    heading: 'अपने टीवी पर आनंद लें',
+    heading1: 'Welcome to the',
+    heading2: 'Movie Match',
     paragraph:
-      'स्मार्ट टीवी, PlayStation, Xbox, Chromecast, Apple TV, ब्लू-रे प्लेयर और बहुत कुछ पर देखें।',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ducimus assumenda error animi quibusdam modi voluptate, sunt expedita recusandae iure suscipit sequi fugit iste explicabo mollitia amet voluptates nam. Error enim explicabo voluptatibus repudiandae, facilis nihil doloremque fugiat provident odio quisquam, alias sequi pariatur nam quidem ab incidunt cumque eum dolorum repellat nemo. Aliquam consequatur reprehenderit amet rem officiis cumque minima recusandae explicabo. Voluptates in explicabo officiis neque qui libero nisi quia, numquam, nesciunt blanditiis minima consequatur harum. Quos quaerat ipsum culpa molestiae magnam velit quia laborum, consequatur voluptate, pariatur porro ea perferendis quae quasi necessitatibus, at illo quidem. Eos?',
   },
   spanish: {
     heading: 'Disfruta en tu televisor',

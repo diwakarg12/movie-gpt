@@ -8,7 +8,7 @@ const HomeHero = () => {
   const langKey = useSelector((store) => store.config.lang);
   return (
     <div
-      className='bg-black bg-opacity-50 bg-blend-multiply flex flex-col items-center justify-start text-white md:py-56 py-32 w-auto'
+      className='bg-black bg-opacity-70 bg-blend-multiply flex flex-col items-center justify-start text-white md:py-56 py-32 w-auto'
       style={{ backgroundImage: `url(${BG_IMG})` }}
     >
       <h1 className='md:text-[3.25rem] text-3xl md:px-0 px-4 py-3 font-semibold'>
@@ -29,7 +29,7 @@ const HomeHero = () => {
         />
         <button
           type='submit'
-          className='md:text-2xl text-xl font-semibold md:mx-4 mx-2 rounded-md md:w-52 w-24 h-14 bg-red-700'
+          className='md:text-2xl text-xl font-semibold md:mx-4 mx-2 rounded-md md:w-52 w-24 h-14 bg-[#1fc386]'
         >
           {HomeHeroLang[langKey].botton}
         </button>

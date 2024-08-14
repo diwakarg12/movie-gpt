@@ -1,11 +1,9 @@
 import { useState } from 'react';
 import Header from './component/Header';
-import DownloadShow from './component/Home/DownloadShow';
 import EnjoyOnTv from './component/Home/EnjoyOnTv';
 import Faq from './component/Home/Faq';
 import HomeHero from './component/Home/HomeHero';
 import KidProfile from './component/Home/KidProfile';
-import WatchEveryWhere from './component/Home/WatchEveryWhere';
 import ReadyToWatch from './component/Home/ReadyToWatch';
 import { FaqLang } from './utility/langConstant';
 import { useSelector } from 'react-redux';
@@ -52,8 +50,8 @@ function App() {
         <Header />
         <HomeHero />
         <EnjoyOnTv />
-        <DownloadShow />
-        <WatchEveryWhere />
+        {/* <DownloadShow /> */}
+        {/* <WatchEveryWhere /> */}
         <KidProfile />
         <div className='text-white bg-black py-6 flex flex-col items-center justify-center'>
           <h1 className='md:text-6xl text-3xl font-bold py-4'>

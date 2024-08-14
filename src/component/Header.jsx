@@ -6,7 +6,7 @@ import { addUser, removeUser } from '../utility/userSlice';
 import { useEffect } from 'react';
 import toast from 'react-hot-toast';
 import { toggleGptSearch } from '../utility/gptSlice';
-import { LOGO, PROFILE_LOGO, SUPPORTED_LANG } from '../utility/constant';
+import { PROFILE_LOGO, SUPPORTED_LANG } from '../utility/constant';
 import { changeLanguage } from '../utility/configSlice';
 
 const Header = () => {
@@ -49,10 +49,11 @@ const Header = () => {
   };
 
   return (
-    <div className='flex  absolute z-10 left-0 right-0 items-center justify-between p-4'>
+    <div className='flex  absolute z-10 left-0 right-0 items-center justify-between p-4 bg-gradient from-purple-600 via-pink-600 to-blue-600'>
       <div className='flex items-center md:-ml-0 md:mr-0 mr-6 -ml-12'>
         <Link to='/'>
-          <img src={LOGO} alt='Logo' className='md:w-48 w-40 pl-12' />
+          <img src='./logo.png' alt='Logo' className='md:w-72 w-64 pl-12' />
+          {/* <h1 classNam/.//e='text-4xl font-bold text-white'>Movie Match</h1> */}
         </Link>
       </div>
       <div className=''>
@@ -94,7 +95,7 @@ const Header = () => {
                   Logout
                 </p>
               </div>
-              <button className='text-white bg-red-700 px-4 py-1.5 rounded-sm text-lg font-semibold md:block hidden'>
+              <button className='text-white bg-[#1fc386] px-4 py-1.5 rounded-sm text-lg font-semibold md:block hidden'>
                 Logout
               </button>
             </div>
@@ -120,7 +121,7 @@ const Header = () => {
             <div>
               <Link
                 to='/login'
-                className='bg-red-600 hover:bg-red-800 py-3 px-4 rounded-sm text-white text-base font-semibold'
+                className='bg-[#1fc386] hover:bg-green-700 py-3 px-4 rounded-sm text-white text-base font-semibold'
               >
                 Sign In
               </Link>

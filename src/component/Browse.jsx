@@ -15,6 +15,7 @@ const Browse = () => {
   usePopularMovies();
   useTopRatedMovies();
   useUpcomingMovies();
+
   return (
     <div className='overflow-x-hidden'>
       <Header />

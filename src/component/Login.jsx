@@ -143,7 +143,7 @@ const Login = () => {
           )}
           <button
             type='submit'
-            className='md:w-3/4 w-11/12 bg-red-600 py-2 my-3 hover:bg-red-800 hover:text-gray-300 rounded-sm font-semibold text-white text-lg'
+            className='md:w-3/4 w-11/12 bg-[#1fc386] py-2 my-3 hover:bg-green-700 hover:text-gray-300 rounded-sm font-semibold text-white text-lg'
           >
             {isLogin ? LoginLang[langKey].signin : LoginLang[langKey].signup}
           </button>

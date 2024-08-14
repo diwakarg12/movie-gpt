@@ -8,11 +8,14 @@ const EnjoyOnTv = () => {
   const langKey = useSelector((store) => store.config.lang);
   return (
     <div className='flex flex-wrap w-full text-white py-24 my-3 bg-black opacity-80 '>
-      <div className='flex flex-col items-start justify-center md:w-1/2 w-full md:mx-24 mx-4 md:pb-0 pb-20'>
-        <h2 className='md:text-6xl text-4xl font-semibold py-3'>
-          {EnjoyOnTVLang[langKey].heading}
+      <div className='flex flex-col items-start justify-center md:w-1/2 w-full md:pl-12 md:pr-4 px-4 md:pb-0 pb-20'>
+        <h2 className='md:text-3xl text-2xl font-semibold'>
+          {EnjoyOnTVLang[langKey].heading1}
         </h2>
-        <p className='md:text-[1.75rem] text-[1.25rem] font-medium py-2'>
+        <h2 className='md:text-6xl text-4xl font-semibold pb-4'>
+          {EnjoyOnTVLang[langKey].heading2}
+        </h2>
+        <p className='md:text-[1.25rem] text-[1rem] font-medium py-2'>
           {EnjoyOnTVLang[langKey].paragraph}
         </p>
       </div>

@@ -56,7 +56,7 @@ const GptSearchBar = () => {
     <div className='bg-black bg-opacity-50 bg-blend-multiply'>
       <div className='md:w-[70%] w-full py-40 m-auto rounded-md text-white'>
         <h1 className='text-[2.5rem] text-center font-semibold pl-2 pb-8 '>
-          Search For Your Movie Names or Movie genres
+          Search For Your Movie With Names, Genres or Storyline
         </h1>
 
         <form className='grid grid-cols-12' onSubmit={handleGptSearch}>
@@ -69,7 +69,7 @@ const GptSearchBar = () => {
           />
           <button
             type='submit'
-            className='col-span-4 bg-red-700 rounded-sm py-2 mx-2 font-semibold text-lg hover:bg-opacity-80'
+            className='col-span-4 bg-[#1fc386] rounded-sm py-2 mx-2 font-semibold text-lg hover:bg-opacity-80'
           >
             {Gptlang[langKey].search}
           </button>

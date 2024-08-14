@@ -1,7 +1,7 @@
-// import React from 'react'
-
+// import React from 'react
 import { useSelector } from 'react-redux';
 import MovieList from './MovieList';
+import { ShimmerCard } from 'react-shimmer-effects';
 
 const MovieListSection = () => {
   const movies = useSelector((store) => store?.movies);
@@ -10,7 +10,7 @@ const MovieListSection = () => {
     !movies?.popularMovies ||
     !movies?.topRatedMovies
   ) {
-    return <div>Movies Not Found</div>;
+    return <ShimmerCard />;
   }
   return (
     <div className='bg-black'>

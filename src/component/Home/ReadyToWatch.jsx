@@ -17,7 +17,7 @@ const ReadyToWatch = () => {
         />
         <button
           type='submit'
-          className='md:text-2xl text-xl font-semibold md:mx-4 mx-2 rounded-md md:w-52 w-24 h-14 bg-red-700'
+          className='md:text-2xl text-xl font-semibold md:mx-4 mx-2 rounded-md md:w-52 w-24 h-14 bg-[#1fc386]'
         >
           {ReadyToWatchLang[langKey].button}
         </button>
