@@ -86,7 +86,7 @@ const Login = () => {
 
   return (
     <div
-      className='w-full h-[110vh] bg-black bg-opacity-50 bg-blend-multiply relative'
+      className='w-full h-[170vh] bg-black bg-opacity-50 bg-blend-multiply relative'
       style={{ backgroundImage: `url(${BG_IMG})` }}
     >
       <Header />

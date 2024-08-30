@@ -42,13 +42,13 @@ export const EnjoyOnTVLang = {
     heading1: 'Welcome to the',
     heading2: 'Movie Match',
     paragraph:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ducimus assumenda error animi quibusdam modi voluptate, sunt expedita recusandae iure suscipit sequi fugit iste explicabo mollitia amet voluptates nam. Error enim explicabo voluptatibus repudiandae, facilis nihil doloremque fugiat provident odio quisquam, alias sequi pariatur nam quidem ab incidunt cumque eum dolorum repellat nemo. Aliquam consequatur reprehenderit amet rem officiis cumque minima recusandae explicabo. Voluptates in explicabo officiis neque qui libero nisi quia, numquam, nesciunt blanditiis minima consequatur harum. Quos quaerat ipsum culpa molestiae magnam velit quia laborum, consequatur voluptate, pariatur porro ea perferendis quae quasi necessitatibus, at illo quidem. Eos?',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ducimus assumenda error animi quibusdam modi voluptate, sunt expedita recusandae iure suscipit sequi fugit iste explicabo mollitia amet voluptates nam. Error enim explicabo voluptatibus repudiandae, facilis nihil doloremque fugiat provident odio quisquam, alias sequi pariatur nam quidem ab incidunt cumque eum dolorum repellat nemo. Aliquam consequatur reprehenderit amet rem officiis cumque minima recusandae explicabo. Voluptates in explicabo officiis neque qui libero nisi quia.',
   },
   hindi: {
-    heading1: 'Welcome to the',
-    heading2: 'Movie Match',
+    heading1: 'मूवी मैच में',
+    heading2: 'आपका स्वागत है',
     paragraph:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ducimus assumenda error animi quibusdam modi voluptate, sunt expedita recusandae iure suscipit sequi fugit iste explicabo mollitia amet voluptates nam. Error enim explicabo voluptatibus repudiandae, facilis nihil doloremque fugiat provident odio quisquam, alias sequi pariatur nam quidem ab incidunt cumque eum dolorum repellat nemo. Aliquam consequatur reprehenderit amet rem officiis cumque minima recusandae explicabo. Voluptates in explicabo officiis neque qui libero nisi quia, numquam, nesciunt blanditiis minima consequatur harum. Quos quaerat ipsum culpa molestiae magnam velit quia laborum, consequatur voluptate, pariatur porro ea perferendis quae quasi necessitatibus, at illo quidem. Eos?',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ducimus assumenda error animi quibusdam modi voluptate, sunt expedita recusandae iure suscipit sequi fugit iste explicabo mollitia amet voluptates nam. Error enim explicabo voluptatibus repudiandae, facilis nihil doloremque fugiat provident odio quisquam, alias sequi pariatur nam quidem ab incidunt cumque eum dolorum repellat nemo. Aliquam consequatur reprehenderit amet rem officiis cumque minima recusandae explicabo. Voluptates in explicabo officiis neque qui libero nisi quia.'
   },
   spanish: {
     heading: 'Disfruta en tu televisor',
@@ -117,83 +117,110 @@ export const KidProfileLang = {
 export const FaqLang = {
   en: {
     heading: 'Frequently Asked Questions',
-    question1: 'What is Netflix?',
-    answer1:
-      'Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more - on thousands of internet-connected devices. You can watch as much as you want, whenever you want, without a single ad - all for one low monthly price. There`s always something new to discover, and new TV shows and movies are added every week!',
+    question1: "What is this website about?",
+    answer1: "This website allows users to browse and search for movies and TV shows using Gemini AI and the TMDB API. Users can discover movies based on their interests, including searching by movie name, storyline, or actor names.",
 
-    question2: 'How much does Netflix Cost?',
-    answer2:
-      'Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.',
-    question3: 'Where can i Watch?',
+    question2: "How do I create an account?",
+    answer2: "To create an account, click on the 'Sign Up' button on the landing page. You will be prompted to enter your email, create a password, and provide some basic information.",
 
-    answer3:
-      'Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles. You can also download your favourite shows with the iOS, Android, or Windows 10 app.',
+    question3: "How do I log in?",
+    answer3: "If you already have an account, click on the 'Log In' button on the landing page. Enter your email and password to access your account and explore the latest movies.",
 
-    question4: 'How do i cancel?',
-    answer4:
-      'Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees - start or stop your account anytime.',
+    question4: "What happens after I log in?",
+    answer4: "After logging in, you will be taken to the main page where you can see the latest movies. You can also browse for more movies by clicking the 'Browse Movies' button.",
 
-    question5: 'What can i watch on Netflix?',
-    answer5:
-      'Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.',
+    question5: "How can I search for a movie or TV show?",
+    answer5: "You can search for a movie or TV show by clicking on the 'Browse Movies' button. Enter keywords related to the movie, such as its name, storyline, or actors, and the app will show a list of relevant results.",
 
-    question6: 'is Netflix Good for kids?',
-    answer6:
-      'The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space. Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don`t want kids to see.',
+    question6: "What information do I get about the movies?",
+    answer6: "When you search for a movie or TV show, you will get detailed information including the movie title, storyline, cast, release date, and ratings.",
+
+    question7: "Can I watch the movies directly on this website?",
+    answer7: "No, this website provides detailed information about movies and TV shows, but it does not host any movies or TV shows for streaming.",
+
+    question8: "Is this service free?",
+    answer8: "Yes, you can sign up, log in, and browse movies and TV shows for free.",
+
+    question9: "Can I save my favorite movies or TV shows?",
+    answer9: "Currently, the website does not support saving favorite movies or TV shows, but you can always search for them again using the search feature."
   },
 
   hindi: {
     heading: 'अक्सर पूछे जाने वाले प्रश्नों',
-    question1: 'नेटफ्लिक्स क्या है?',
+    question1: 'यह वेबसाइट किस बारे में है?',
     answer1:
-      'नेटफ्लिक्स एक स्ट्रीमिंग सेवा है जो हजारों इंटरनेट से जुड़े उपकरणों पर विभिन्न प्रकार के पुरस्कार विजेता टीवी शो, फिल्में, एनीमे, वृत्तचित्र और बहुत कुछ प्रदान करती है। आप जब चाहें, जितना चाहें, बिना किसी विज्ञापन के देख सकते हैं - सब कुछ एक कम मासिक कीमत पर। खोजने के लिए हमेशा कुछ नया होता है, और हर हफ्ते नए टीवी शो और फिल्में जोड़ी जाती हैं!',
+      'यह वेबसाइट उपयोगकर्ताओं को Gemini AI और TMDB API का उपयोग करके फिल्में और टीवी शो ब्राउज़ और खोजने की सुविधा देती है। उपयोगकर्ता अपनी रुचियों के आधार पर फिल्में खोज सकते हैं, जिसमें फिल्म का नाम, कहानी, या अभिनेता के नामों के माध्यम से खोज करना शामिल है।',
 
-    question2: 'नेटफ्लिक्स की लागत कितनी है?',
+    question2: 'मैं Account कैसे बनाऊं?',
     answer2:
-      'अपने स्मार्टफोन, टैबलेट, स्मार्ट टीवी, लैपटॉप या स्ट्रीमिंग डिवाइस पर नेटफ्लिक्स देखें, सब कुछ एक निश्चित मासिक शुल्क पर। योजनाएं ₹149 से ₹649 प्रति माह तक हैं। कोई अतिरिक्त लागत नहीं, कोई अनुबंध नहीं।',
+      'खाता बनाने के लिए, लैंडिंग पेज पर `साइन अप` बटन पर क्लिक करें। आपको अपना ईमेल दर्ज करने, पासवर्ड बनाने और कुछ बुनियादी जानकारी प्रदान करने के लिए कहा जाएगा।',
 
-    question3: 'मैं कहाँ देख सकता हूँ?',
+    question3: 'मैं लॉग इन कैसे करूं?',
     answer3:
-      'कहीं भी, कभी भी देखें. अपने व्यक्तिगत कंप्यूटर से या स्मार्ट टीवी, स्मार्टफोन, टैबलेट, स्ट्रीमिंग मीडिया प्लेयर और गेम कंसोल सहित नेटफ्लिक्स ऐप प्रदान करने वाले किसी भी इंटरनेट से जुड़े डिवाइस पर Netflix.com पर वेब पर तुरंत देखने के लिए अपने नेटफ्लिक्स खाते से साइन इन करें। आप अपने पसंदीदा शो आईओएस, एंड्रॉइड या विंडोज 10 ऐप से भी डाउनलोड कर सकते हैं।',
+      'यदि आपके पास पहले से एक खाता है, तो लैंडिंग पेज पर `लॉग इन` बटन पर क्लिक करें। अपने ईमेल और पासवर्ड को दर्ज करें ताकि आप अपने खाते में प्रवेश कर सकें और नवीनतम फिल्मों को देख सकें।',
 
-    question4: 'मैं कैसे रद्द करूं?',
+    question4: 'लॉग इन करने के बाद क्या होता है?',
     answer4:
-      'नेटफ्लिक्स लचीला है। इसमें कोई कष्टप्रद अनुबंध और कोई प्रतिबद्धता नहीं है। आप दो क्लिक में आसानी से अपना खाता ऑनलाइन रद्द कर सकते हैं। कोई रद्दीकरण शुल्क नहीं है - अपना खाता किसी भी समय शुरू या बंद करें।',
+      'लॉग इन करने के बाद, आपको मुख्य पेज पर ले जाया जाएगा जहां आप नवीनतम फिल्में देख सकते हैं। आप `ब्राउज़ मूवीज` बटन पर क्लिक करके और अधिक फिल्में भी खोज सकते हैं।',
 
-    question5: 'मैं नेटफ्लिक्स पर क्या देख सकता हूँ?',
+    question5: 'मैं फिल्म या टीवी शो कैसे खोज सकता हूँ?',
     answer5:
-      'नेटफ्लिक्स के पास फीचर फिल्मों, वृत्तचित्रों, टीवी शो, एनीमे, पुरस्कार विजेता नेटफ्लिक्स मूल और बहुत कुछ की एक विस्तृत लाइब्रेरी है। जितना चाहो, जब चाहो देखो।',
+      'आप `ब्राउज़ मूवीज` बटन पर क्लिक करके फिल्म या टीवी शो खोज सकते हैं। फिल्म के नाम, कहानी, या कलाकारों से संबंधित कीवर्ड दर्ज करें और ऐप आपको संबंधित परिणामों की सूची दिखाएगा।',
 
-    question6: 'क्या नेटफ्लिक्स बच्चों के लिए अच्छा है',
+    question6: 'मुझे फिल्मों के बारे में कौन सी जानकारी मिलती है?',
     answer6:
-      'माता-पिता को नियंत्रण देने के लिए नेटफ्लिक्स किड्स अनुभव को आपकी सदस्यता में शामिल किया गया है, जबकि बच्चे अपने स्थान पर परिवार के अनुकूल टीवी शो और फिल्मों का आनंद लेते हैं। बच्चों की प्रोफ़ाइलें पिन-सुरक्षित अभिभावक नियंत्रण के साथ आती हैं जो आपको बच्चों द्वारा देखी जाने वाली सामग्री की परिपक्वता रेटिंग को सीमित करने देती है और उन विशिष्ट शीर्षकों को ब्लॉक करने देती है जिन्हें आप नहीं चाहते कि बच्चे देखें।',
+      'जब आप किसी फिल्म या टीवी शो को खोजते हैं, तो आपको फिल्म का शीर्षक, कहानी, कलाकार, रिलीज़ की तारीख और रेटिंग जैसी विस्तृत जानकारी मिलती है।',
+
+    question7: 'क्या मैं इस वेबसाइट पर सीधे फिल्में देख सकता हूँ?',
+    answer7:
+      'नहीं, यह वेबसाइट फिल्मों और टीवी शो के बारे में विस्तृत जानकारी प्रदान करती है, लेकिन यह किसी भी फिल्म या टीवी शो को स्ट्रीमिंग के लिए होस्ट नहीं करती।',
+
+    question8: 'क्या यह सेवा मुफ्त है?',
+    answer8:
+      'हाँ, आप मुफ्त में साइन अप कर सकते हैं, लॉग इन कर सकते हैं, और फिल्में और टीवी शो ब्राउज़ कर सकते हैं।',
+
+    question9: '"क्या मैं अपनी पसंदीदा फिल्में या टीवी शो सेव कर सकता हूँ?',
+    answer9:
+      'वर्तमान में, वेबसाइट पसंदीदा फिल्में या टीवी शो सेव करने का समर्थन नहीं करती, लेकिन आप उन्हें फिर से खोजने के लिए हमेशा खोज फ़ीचर का उपयोग कर सकते हैं।',
   },
 
   spanish: {
     heading: 'Preguntas frecuentes',
-    question1: '¿Qué es Netflix?',
+    question1: '¿De qué trata este sitio web?',
     answer1:
-      'Netflix es un servicio de streaming que ofrece una amplia variedad de programas de televisión, películas, anime, documentales y más galardonados en miles de dispositivos conectados a Internet. Puedes mirar todo lo que quieras, cuando quieras, sin un solo anuncio, todo por un bajo precio mensual. ¡Siempre hay algo nuevo que descubrir y cada semana se agregan nuevos programas de televisión y películas!',
+      'Este sitio web permite a los usuarios explorar y buscar películas y programas de televisión utilizando Gemini AI y la API de TMDB. Los usuarios pueden descubrir películas según sus intereses, incluyendo la búsqueda por nombre de la película, historia o nombres de actores.',
 
-    question2: '¿Cuánto cuesta Netflix?',
+    question2: '¿Cómo creo una cuenta?',
     answer2:
-      'Mire Netflix en su teléfono inteligente, tableta, Smart TV, computadora portátil o dispositivo de transmisión, todo por una tarifa mensual fija. Los planes oscilan entre ₹ 149 y ₹ 649 al mes. Sin costes extra, sin contratos.',
+      'Para crear una cuenta, haz clic en el botón `Registrarse` en la página de inicio. Se te pedirá que ingreses tu correo electrónico, crees una contraseña y proporciones alguna información básica.',
 
-    question3: '¿Dónde puedo mirar?',
+    question3: '¿Cómo inicio sesión?',
     answer3:
-      'Mire en cualquier lugar y en cualquier momento. Inicie sesión con su cuenta de Netflix para mirar instantáneamente en la web en netflix.com desde su computadora personal o en cualquier dispositivo conectado a Internet que ofrezca la aplicación Netflix, incluidos televisores inteligentes, teléfonos inteligentes, tabletas, reproductores multimedia de transmisión y consolas de juegos. También puedes descargar tus programas favoritos con la aplicación para iOS, Android o Windows 10.',
+      'Si ya tienes una cuenta, haz clic en el botón `Iniciar sesión` en la página de inicio. Ingresa tu correo electrónico y contraseña para acceder a tu cuenta y explorar las últimas películas.',
 
-    question4: '¿Cómo cancelo?',
+    question4: '¿Qué sucede después de iniciar sesión?',
     answer4:
-      'SNetflix es flexible. No hay contratos molestos ni compromisos. Puede cancelar fácilmente su cuenta en línea con dos clics. No hay cargos por cancelación: inicie o cierre su cuenta en cualquier momento.',
+      'Después de iniciar sesión, serás dirigido a la página principal donde podrás ver las últimas películas. También puedes explorar más películas haciendo clic en el botón `Explorar películas`.',
 
-    question5: '¿Qué puedo ver en Netflix?',
+    question5: '¿Cómo puedo buscar una película o programa de televisión?',
     answer5:
-      'Netflix tiene una extensa biblioteca de largometrajes, documentales, programas de televisión, anime, originales de Netflix galardonados y más. Mira todo lo que quieras, cuando quieras.',
+      'Puedes buscar una película o programa de televisión haciendo clic en el botón `Explorar películas`. Ingresa palabras clave relacionadas con la película, como su nombre, historia o actores, y la aplicación mostrará una lista de resultados relevantes.',
 
-    question6: '¿Netflix es buena para las niñas?',
+    question6: '¿Qué información obtengo sobre las películas?',
     answer6:
-      'La experiencia Netflix Kids está incluida en tu membresía para brindarles a los padres el control mientras los niños disfrutan de programas de televisión y películas familiares en su propio espacio. Los perfiles infantiles vienen con controles parentales protegidos por PIN que te permiten restringir la clasificación de madurez del contenido que los niños pueden ver y bloquear títulos específicos que no quieres que vean.',
+      'Cuando buscas una película o programa de televisión, obtendrás información detallada, incluyendo el título de la película, historia, reparto, fecha de lanzamiento y calificaciones.',
+
+    question7: '¿Puedo ver las películas directamente en este sitio web?',
+    answer7:
+      'No, este sitio web proporciona información detallada sobre películas y programas de televisión, pero no aloja películas ni programas de televisión para su transmisión.',
+
+    question8: '¿Es este servicio gratuito?',
+    answer8:
+      'Sí, puedes registrarte, iniciar sesión y explorar películas y programas de televisión de forma gratuita.',
+
+    question9: '¿Puedo guardar mis películas o programas de televisión favoritos?',
+    answer9:
+      'Actualmente, el sitio web no admite guardar películas o programas de televisión favoritos, pero siempre puedes buscarlos de nuevo utilizando la función de búsqueda.',
   },
 };
 

@@ -53,7 +53,6 @@ const Header = () => {
       <div className='flex items-center md:-ml-0 md:mr-0 mr-6 -ml-12'>
         <Link to='/'>
           <img src='./logo.png' alt='Logo' className='md:w-72 w-64 pl-12' />
-          {/* <h1 classNam/.//e='text-4xl font-bold text-white'>Movie Match</h1> */}
         </Link>
       </div>
       <div className=''>

@@ -41,6 +41,21 @@ function App() {
       Question: FaqLang[langKey].question6,
       Answer: FaqLang[langKey].answer6,
     },
+    {
+      id: 7,
+      Question: FaqLang[langKey].question7,
+      Answer: FaqLang[langKey].answer7,
+    },
+    {
+      id: 8,
+      Question: FaqLang[langKey].question8,
+      Answer: FaqLang[langKey].answer8,
+    },
+    {
+      id: 9,
+      Question: FaqLang[langKey].question9,
+      Answer: FaqLang[langKey].answer9,
+    },
   ];
   const [showIndex, setShowIndex] = useState(null);
 
@@ -50,8 +65,6 @@ function App() {
         <Header />
         <HomeHero />
         <EnjoyOnTv />
-        {/* <DownloadShow /> */}
-        {/* <WatchEveryWhere /> */}
         <KidProfile />
         <div className='text-white bg-black py-6 flex flex-col items-center justify-center'>
           <h1 className='md:text-6xl text-3xl font-bold py-4'>
